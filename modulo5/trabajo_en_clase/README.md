@@ -92,3 +92,54 @@ http.createServer(function (req, res) {
 console.log('Server running at 3000');
 ``` 
 
+## 12. Volverse root
+
+Ejecuta el siguiente comando para salir del usuario desarrollo
+
+```
+exit
+```
+
+## 13. Instalar Docker
+
+### 13.1 Instalar dependencias
+
+```
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+```
+
+### 13.2 Instalar las llaves de GPG
+
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+
+### 13.3 Agregar el repositorio de Docker en los repositorios de APT
+
+```
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+```
+
+### 13.4 Actualizar los repositorios 
+
+```
+sudo apt update
+```
+
+### 13.5 Limpiar la cache de repositorios
+
+```
+apt-cache policy docker-ce
+```
+
+### 13.6 Instalar docker 
+
+```
+sudo apt install docker-ce
+```
+
+### 13.7 Validar que docker este corriendo
+
+```
+sudo systemctl status docker
+```
