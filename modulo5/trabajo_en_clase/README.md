@@ -143,3 +143,21 @@ sudo apt install docker-ce
 ```
 sudo systemctl status docker
 ```
+
+### 13.8 Correr el hello world de docker
+
+```
+docker run hello-world
+```
+
+### 13.9 Correr un nginx con docker
+
+```
+docker run nginx
+```
+
+### 13.10 Correr un nginx con docker haciendo un bind al puerto 80 local con el puerto 80 del contenedor
+
+```
+docker run -p 80:80 nginx
+```
