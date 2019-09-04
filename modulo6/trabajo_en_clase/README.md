@@ -371,3 +371,9 @@ app.listen(3000, function () {
  
 module.exports = app;
 ```
+
+## 33. Ejecutar el archivo server.js como demonio
+
+```
+node server.js &
+```
