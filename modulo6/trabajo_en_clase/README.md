@@ -145,57 +145,37 @@ docker ps
 ```
 docker images
 ```
-## 16. Parar el contenedor corriendo actualmente
 
-```
-docker stop <container name>
-```
-
-## 17. Valida que la pagina web ya no responde en el subdominio asignado por el coordinador
-
-## 18. Para el servicio de docker engine
-
-este comando debes ejecutarlo como root
-
-```
-systemctl stop docker
-```
-
-## 19. Valida que docker engine no este corriendo
-
-```
-docker version
-```
 
 # Parte 2
 
-## 20. Ser root
+## 16. Ser root
 
-## 21. Instalar un servidor de MySQL 
+## 17. Instalar un servidor de MySQL 
 
 ```
 apt install mysql-server
 ```
 
-## 22. Ingresar en la consola de la base de datos
+## 18. Ingresar en la consola de la base de datos
 
 ```
 mysql
 ```
 
-## 23. Crear la base de datos curriculum
+## 19. Crear la base de datos curriculum
 
 ```
 mysql> CREATE DATABASE curriculum;
 ```
 
-## 24. Seleccionar la base de datos para comenzar a trabajar en ella
+## 20. Seleccionar la base de datos para comenzar a trabajar en ella
 
 ```
 mysql> USE curriculum;
 ```
 
-## 25. Crear la tabla "attitudes"
+## 21. Crear la tabla "attitudes"
 
 ```
 mysql> CREATE TABLE IF NOT EXISTS attitudes (
@@ -205,7 +185,7 @@ mysql> CREATE TABLE IF NOT EXISTS attitudes (
   ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 ```
 
-## 26. Configurar el campo id como clave primaria en la tabla "attitudes"
+## 22. Configurar el campo id como clave primaria en la tabla "attitudes"
 
 ```
 mysql> ALTER TABLE attitudes ADD PRIMARY KEY (id);
@@ -222,57 +202,57 @@ mysql> INSERT INTO attitudes (name, description) VALUES
   ('Respeto', 'Soy una persona muy respetuosa');
 ```
 
-## 27. Crear el usuario "attitudes"
+## 23. Crear el usuario "attitudes"
 
 ```
 mysql> CREATE USER 'attitudes'@'localhost' IDENTIFIED BY 'password';
 ```
 
-## 28. Dar permisos al usuario "attitudes" sobre la base de datos curriculum y todas sus tablas
+## 24. Dar permisos al usuario "attitudes" sobre la base de datos curriculum y todas sus tablas
 
 ```
 mysql> GRANT ALL PRIVILEGES ON curriculum.attitudes TO 'attitudes'@'localhost';
 ```
 
-## 29. Actualizar privilegios
+## 25. Actualizar privilegios
 
 ```
 mysql> FLUSH PRIVILEGES;
 ```
 
-## 30. Salir de la consola de mysql
+## 26. Salir de la consola de mysql
 
 ```
 mysql> exit;
 ```
 
-## 31. Convertirse en el usuario desarrollo
+## 27. Convertirse en el usuario desarrollo
 
 ```
 sudo su desarrollo
 ```
 
-## 32. Ir al directorio "home" del usuario desarrollo
+## 28. Ir al directorio "home" del usuario desarrollo
 
 ```
 cd
 ```
 
-## 33. Crear una carpeta con el nombre "attitudes-api" e ingresar a la misma
+## 29. Crear una carpeta con el nombre "attitudes-api" e ingresar a la misma
 
 ```
 mkdir attitudes-api
 cd attitudes-api
 ```
 
-## 34. Ejecutar el comando npm init y npm install
+## 30. Ejecutar el comando npm init y npm install
 
 ```
 npm init --yes
 npm install 
 ```
 
-## 35. Instalar express, mysql y body-parser
+## 31. Instalar express, mysql y body-parser
 
 ```
 npm install express --save
@@ -280,7 +260,7 @@ npm install mysql --save
 npm install body-parser --save
 ```
 
-## 36. Crear el archivo  server.js con el siguiente contenido
+## 32. Crear el archivo  server.js con el siguiente contenido
 
 ```
 var express = require('express');
