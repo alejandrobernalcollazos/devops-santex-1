@@ -342,8 +342,6 @@ http://nombre-de-dominio:puerto/
 
 ## 26. En la consola matar al demonio
 
-### 26.1 ejecutar el comando kill
-
 ```
 kill -9 <PID del proceso de la API>
 ```
@@ -410,3 +408,41 @@ app.listen(3000, function () {
 
 module.exports = app;
 ```
+
+## 28. En la consola matar al demonio
+
+```
+kill -9 <PID del proceso de la API>
+```
+
+## 29. Pararse en la carpeta anterior
+
+```
+cd
+```
+
+## 30. Clonar el repositorio del backend
+
+```
+git clone https://github.com/alejandrobernalcollazos/abernal-attitudes
+```
+
+## 31. Entrar en la carpeta que se genero
+
+```
+cd abernal-attitudes
+```
+
+## 32. Crear una imagen a partir del docker file dentro del repositorio
+
+```
+docker build -t backend .
+```
+
+## 33. Crear un contenedor a partir de la imagen
+
+```
+docker run -p 3000:3000 backend
+```
+
+## 34. Hacer el trouble shooting
