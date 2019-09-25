@@ -195,7 +195,7 @@ mysql> exit;
 ## 12. Convertirse en el usuario desarrollo
 
 ```
-c
+su desarrollo
 ```
 
 ## 13. Ir al directorio "home" del usuario desarrollo
