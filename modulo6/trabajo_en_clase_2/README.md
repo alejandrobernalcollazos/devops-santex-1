@@ -418,7 +418,7 @@ kill -9 <PID del proceso de la API>
 ## 29. Pararse en la carpeta anterior
 
 ```
-cd
+cd ..
 ```
 
 ## 30. Clonar el repositorio del backend
