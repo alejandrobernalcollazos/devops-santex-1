@@ -23,7 +23,7 @@ apt-get update
 ### 4.1 Instalar curl
 
 ```
-apt-get install curl
+apt-get install curl -y
 
 ```
 
@@ -36,7 +36,7 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 ### 4.3 Instalar node
 
 ```
-apt-get install nodejs
+apt-get install nodejs -y
 ```
 
 ## 5. Instalar Docker
@@ -44,7 +44,7 @@ apt-get install nodejs
 ### 5.1 Instalar dependencias
 
 ```
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
 ```
 
 ### 5.2 Instalar las llaves de GPG
@@ -74,7 +74,7 @@ apt-cache policy docker-ce
 ### 5.6 Instalar docker
 
 ```
-sudo apt install docker-ce
+sudo apt install docker-ce -y
 ```
 
 ### 5.7 Validar que docker este corriendo
