@@ -348,7 +348,7 @@ http://nombre-de-dominio:puerto/
 kill -9 <PID del proceso de la API>
 ```
 
-## 27. Agregar datos de conección a la base de datos MySQL
+## 27. Modificamos el archivo server.js
 
 ### 27.1 Modificar el archivo server.js
 
