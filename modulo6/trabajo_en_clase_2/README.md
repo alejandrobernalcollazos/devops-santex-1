@@ -113,10 +113,14 @@ cd ~
 
 ## 1. Ser root
 
+```
+exit
+```
+
 ## 2. Instalar un servidor de MySQL 
 
 ```
-apt install mysql-server
+apt install mysql-server -y
 ```
 
 ## 3. Ingresar en la consola de la base de datos
@@ -191,7 +195,7 @@ mysql> exit;
 ## 12. Convertirse en el usuario desarrollo
 
 ```
-sudo su desarrollo
+c
 ```
 
 ## 13. Ir al directorio "home" del usuario desarrollo
@@ -238,7 +242,7 @@ app.use(bodyParser.urlencoded({
 
 // default route
 app.get('/', function (req, res) {
-    return res.send({ error: true, message: 'hello' })
+    return res.send({ error: false, message: 'hello' })
 });
 
 // set port
@@ -267,12 +271,6 @@ http://nombre-de-dominio:puerto/
 
 ## 21. En la consola matar al demonio
 
-### 21.1 volverse root
-
-```
-exit
-```
-
 ### 21.2 ejecutar el comando kill
 
 ```
@@ -281,25 +279,7 @@ kill -9 <PID del proceso de la API>
 
 ## 22. Agregar datos de conección a la base de datos MySQL
 
-### 22.1 Volverse el usuario desarrollo
-
-```
-sudo su desarrollo
-```
-
-ir a la carpeta home
-
-```
-cd
-```
-
-### 22.2 Dentro de la carpeta attitudes-api
-
-```
-cd attitudes-api
-```
-
-### 22.3 Modificar el archivo server.js
+### 22.1 Modificar el archivo server.js
 
 ```
 var express = require('express');
@@ -362,13 +342,7 @@ http://nombre-de-dominio:puerto/
 
 ## 26. En la consola matar al demonio
 
-### 26.1 volverse root
-
-```
-exit
-```
-
-### 26.2 ejecutar el comando kill
+### 26.1 ejecutar el comando kill
 
 ```
 kill -9 <PID del proceso de la API>
@@ -376,25 +350,7 @@ kill -9 <PID del proceso de la API>
 
 ## 27. Agregar datos de conección a la base de datos MySQL
 
-### 27.1 Volverse el usuario desarrollo
-
-```
-sudo su desarrollo
-```
-
-ir a la carpeta home
-
-```
-cd
-```
-
-### 27.2 Dentro de la carpeta attitudes-api
-
-```
-cd attitudes-api
-```
-
-### 27.3 Modificar el archivo server.js
+### 27.1 Modificar el archivo server.js
 
 ```
 var express = require('express');
