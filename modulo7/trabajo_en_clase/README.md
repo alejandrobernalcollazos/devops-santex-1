@@ -93,6 +93,8 @@ aws configure
 Ingresar los datos proveidos 
 - Access Key
 - Secret Access Key
+- Default region name : us-east-1
+- Output : <Enter>
 
 ## 11. Crear la carpeta terraform
 
