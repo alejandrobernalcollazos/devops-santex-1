@@ -34,10 +34,10 @@ wget https://releases.hashicorp.com/terraform/0.12.9/terraform_0.12.9_linux_amd6
 unzip terraform_0.12.9_linux_amd64.zip 
 ```
 
-## 6. Poner el binario dentro de el path /src/bin
+## 6. Poner el binario dentro de el path /usr/local/bin
 
 ```
-mv terraform /usr/bin
+mv terraform /usr/local/bin
 ```
 
 ## 7. Crear el usuario "desarrollo"
