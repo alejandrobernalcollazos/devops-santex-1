@@ -149,3 +149,8 @@ Ejecutar en la consola el siguiente comando
 usermod -aG docker jenkins
 ```
 
+## 25. Reiniciar el servicio de jenkins
+
+```
+systemctl restar jenkins
+```
