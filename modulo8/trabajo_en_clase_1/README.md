@@ -152,5 +152,5 @@ usermod -aG docker jenkins
 ## 25. Reiniciar el servicio de jenkins
 
 ```
-systemctl restar jenkins
+systemctl restart jenkins
 ```
