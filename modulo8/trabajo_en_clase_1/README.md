@@ -141,5 +141,11 @@ OK
 - Build configuration : Jenkinsfile
 - Leave other as default 
 
+## 24. Agregar al usuario Jenkins al grupo docker
 
+Ejecutar en la consola el siguiente comando
+
+```
+usermod -aG docker jenkins
+```
 
