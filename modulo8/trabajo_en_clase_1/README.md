@@ -74,74 +74,7 @@ apt update
 apt install jenkins -y
 ```
 
-## 14. Verificar el estatus de Jenkins
-
-```
-systemctl status jenkins
-```
-
-## 15. Copiar el password que se genero en el archivo
-
-```
-cat /var/lib/jenkins/secrets/initialAdminPassword
-```
-
-## 16. Ingresar a la interfaz grafica e ingresar el password que se auto genero
-
-```
-Chrome: http://<my dominio>:8080
-```
-
-## 17. Seleccionar Install Suggested plugins
-
-```
-Suggested plugins
-```
-
-## 18. Configurar los datos para el usuario administrador
-
-- Username
-- Password
-- Confirmar password
-- Full name
-- E-mail address
-
-## 19. Confirmar la url de jenkins
-
-Corroborar la url para Jenkins
-
-## 20. Crear un nuevo Item
-
-Click en nuevo item desde la interfaz grafica
-
-## 21. Definir un nombre
-
-```
-FrontEnd Pipeline
-```
-
-## 21. Seleccionar la opcion
-
-```
-Multibranch Pipeline
-```
-
-## 22. Dar 
-
-```
-OK
-```
-
-## 23. Configurar con los siguientes datos
-
-- Display name: Frontend pipeline
-- Branch sources : Github
-- Repository url : https://github.com/alejandrobernalcollazos/abernal
-- Behaviours     : Discover branches
-- Build configuration : Jenkinsfile
-- Leave other as default 
-
-## 24. Agregar al usuario Jenkins al grupo docker
+## 14. Agregar al usuario Jenkins al grupo docker
 
 Ejecutar en la consola el siguiente comando
 
@@ -149,8 +82,75 @@ Ejecutar en la consola el siguiente comando
 usermod -aG docker jenkins
 ```
 
-## 25. Reiniciar el servicio de jenkins
+## 15. Reiniciar el servicio de jenkins
 
 ```
 systemctl restart jenkins
 ```
+
+## 16. Verificar el estatus de Jenkins
+
+```
+systemctl status jenkins
+```
+
+## 17. Copiar el password que se genero en el archivo
+
+```
+cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+
+## 18. Ingresar a la interfaz grafica e ingresar el password que se auto genero
+
+```
+Chrome: http://<my dominio>:8080
+```
+
+## 19. Seleccionar Install Suggested plugins
+
+```
+Suggested plugins
+```
+
+## 20. Configurar los datos para el usuario administrador
+
+- Username
+- Password
+- Confirmar password
+- Full name
+- E-mail address
+
+## 21. Confirmar la url de jenkins
+
+Corroborar la url para Jenkins
+
+## 22. Crear un nuevo Item
+
+Click en nuevo item desde la interfaz grafica
+
+## 23. Definir un nombre
+
+```
+FrontEnd Pipeline
+```
+
+## 24. Seleccionar la opcion
+
+```
+Multibranch Pipeline
+```
+
+## 25. Dar 
+
+```
+OK
+```
+
+## 26. Configurar con los siguientes datos
+
+- Display name: Frontend pipeline
+- Branch sources : Github
+- Repository url : https://github.com/alejandrobernalcollazos/abernal
+- Behaviours     : Discover branches
+- Build configuration : Jenkinsfile
+- Leave other as default 
